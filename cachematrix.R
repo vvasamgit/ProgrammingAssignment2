@@ -27,6 +27,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## function with matrix object for which inverse matrix can be created.
 
 
+
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inverseMatrix <- x$getInverseMatrix()
@@ -41,13 +42,4 @@ cacheSolve <- function(x, ...) {
   
 }
 
-xmat<-matrix( c(1:4),nrow=2,ncol=2)
 
-xmat
-
-xmatc<-makeCacheMatrix(xmat)
-
-xmatc
-
-
-cacheSolve(xmatc)
